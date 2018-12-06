@@ -67,6 +67,7 @@ type InputType
     | Search
     | Tel
     | Color
+    | File
 
 
 type alias Options msg =
@@ -396,6 +397,8 @@ typeAttribute inputType =
 
             Color ->
                 "color"
+
+            File -> "file"
 
 
 validationAttribute : FormInternal.Validation -> Html.Attribute msg
